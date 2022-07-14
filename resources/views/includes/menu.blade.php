@@ -21,10 +21,17 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Reportar incidencias</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Administración</a>
-        </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administración</a>
+            <div class="dropdown-menu" style="">
+              <a class="dropdown-item" href="/usuarios">Usuarios</a>
+              <a class="dropdown-item" href="/proyectos">Proyectos</a>
+              <a class="dropdown-item" href="/config">Configuración</a>
+          </li>
+
         @else
+
         <a class="nav-link" href="#">Bienvenido</a>
         </li>
         <li class="nav-item">

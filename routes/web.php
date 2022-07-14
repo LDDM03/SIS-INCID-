@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/reportar', [App\Http\Controllers\HomeController::class, 'report'])->name('report');
 
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['admin']], function () {
         
     Route::get('/usuarios', [App\Http\Controllers\Admin\ConfigController::class, 'index'])->name('usuarios');
     Route::get('/proyectos', [App\Http\Controllers\Admin\ProjectController::class, 'index'])->name('proyectos');
