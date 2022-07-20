@@ -33,12 +33,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"; class="dark bg-dark">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
-
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border: 3px solid #d0d0d0; height:40px">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:white">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </nav>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
@@ -96,8 +102,23 @@
             
         </main>
 
-        @include('includes.footer')
+        
+       
         
     </div>
+
+    @if (auth()->check())
+
+    {{--@include('includes.footer')--}}
+
+    @else
+
+    @include('includes.footer')
+
+    @endguest
+
+
+
 </body>
+
 </html>

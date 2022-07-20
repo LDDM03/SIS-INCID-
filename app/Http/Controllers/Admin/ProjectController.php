@@ -9,6 +9,26 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        return ('HOLAAAAAAAAAA');
+        
     }
+
+    public function store()
+    {
+       
+    }
+
+    public function edit()
+    {
+    
+    }
+
+    public function update()
+    {
+       
+    }
+
+    public function delete (){
+
+    }
+
 }
