@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Contraseña <em>Es necesario tambien actualizar la constraseña para actualizar los datos</em></label>
+                            <label for="email">Contraseña <em>Es necesario tambien actualizar la contraseña para actualizar los datos</em></label>
                             <input type="text" name="password" class="form-control">
                         </div>
 

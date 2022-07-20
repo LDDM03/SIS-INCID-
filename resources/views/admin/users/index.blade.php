@@ -70,7 +70,7 @@
                     @foreach ($users as $user)
                             <tr>
                                 <td>{{$user->email}}</td>
-                                <td>{{$user->namel}}</td>
+                                <td>{{$user->name}}</td>
 
 
                                 <td>
