@@ -42,8 +42,7 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/proyecto/{id}', [App\Http\Controllers\Admin\ProjectController::class, 'update'])->name('proyecto'); 
 
     Route::get('/proyecto/{id}/eliminar', [App\Http\Controllers\Admin\ProjectController::class, 'delete'])->name('proyecto');
-    
-    
+    Route::get('/proyecto/{id}/restaurar', [App\Http\Controllers\Admin\ProjectController::class, 'restore'])->name('proyecto');
 
     Route::get('/config', [App\Http\Controllers\Admin\ConfigController::class, 'index'])->name('config');
 
